@@ -1,6 +1,8 @@
 # gdb-gef
 
-Run these 2 commands:
+Run these commands:
+
+`sudo apt install gdb -y`
 
 `wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py`
 
