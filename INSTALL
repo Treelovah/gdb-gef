@@ -1,11 +1,15 @@
-echo "This script was made to be built on debian based machines with the APT repos available"
+echo "[+] This script was made to be built on debian based machines with the APT repos available"
+echo "[-]"
+echo "[-]
 sleep 2;
 clear;
-echo "Installing gdb and python3-pip"
+echo "[+] Installing gdb and python3-pip"
 sudo apt-get install -qqy gdb python3-pip >> /dev/null
-echo "Installing keystone-engine, unicorn, capstone, and ropper via pip"
+echo "[+] Installing keystone-engine, unicorn, capstone, and ropper via pip"
 pip install keystone-engine unicorn capstone ropper >> /dev/null
 echo "grabbing gef.py from github"
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
-echo "Installation complete"
+echo [-]
+echo [-]
+echo "[+] Installation complete"
